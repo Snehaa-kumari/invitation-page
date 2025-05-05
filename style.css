@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top left, #ff9a9e, #fad0c4);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #ff6f61;
+    margin-bottom: 15px;
+  }
+  
+  .event-name {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .event-details p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  .event-details i {
+    color: #ff6f61;
+    margin-right: 6px;
+  }
+  
+  .description {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .rsvp-btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+    animation: pulse 2s infinite;
+  }
+  
+  .rsvp-btn:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .card {
+      padding: 25px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .event-name {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 105, 135, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(255, 105, 135, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 105, 135, 0);
+    }
+  }
+  
